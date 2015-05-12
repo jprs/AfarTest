@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+    <object id="ManagerFactory" type="DirectCenter.DTO.AllManagerFactory,DirectCenter.DTO">
+      
+        <property name="UserManager" ref="UserManagerTrans"/>
+   
+        <property name="CompanyManager" ref="CompanyManagerTrans"/>
+     
+        <property name="DepartmentManager" ref="DepartmentManagerTrans"/>
+ 
+    </object>
+
+
+
+
+    <object id="LoginController" singleton="false"  type="DirectCenter.Controllers.LoginController,DirectCenter.Controllers">
+    </object>
+    <object id="HomeController"  singleton="false"  type="DirectCenter.Controllers.HomeController,DirectCenter.Controllers">
+    </object>
+    <object id="UserController"   singleton="false" type="DirectCenter.Controllers.UserController, DirectCenter.Controllers" >
+    </object>
+ 
+</objects>
+
+
+
