@@ -16,7 +16,6 @@ namespace DirectCenter.UnitTest
             get
             {
                 return new String[] { "objects.xml" };
-
             }
         }
 
